@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Student Records</title>
+    <script src="app.js"></script> <!-- Include the JavaScript file -->
+</head>
+<body class="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
+    <div class="max-w-screen-xl m-0 sm:m-20 bg-white shadow sm:rounded-lg flex justify-center flex-1 mt-8">
+        <div class="p-6 sm:p-12">
+          <div class="flex justify-between items-center">
+            <h1 class="text-2xl xl:text-3xl font-extrabold">Student Records</h1>
+          </div>
+          <div class="overflow-x-auto mt-8">
+            <table id="recordTable" class="w-full table-fixed">
+              <thead>
+                <tr>
+                  <th class="px-6 py-3 bg-indigo-500 text-gray-100 font-semibold">Name</th>
+                  <th class="px-6 py-3 bg-indigo-500 text-gray-100 font-semibold">Gender</th>
+                  <th class="px-6 py-3 bg-indigo-500 text-gray-100 font-semibold">Email</th>
+                  <th class="px-6 py-3 bg-indigo-500 text-gray-100 font-semibold">Address</th>
+                  <th class="px-6 py-3 bg-indigo-500 text-gray-100 font-semibold">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="recordTableBody">
+                <!-- Records will be dynamically added here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
